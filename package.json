@@ -13,6 +13,7 @@
         "dist/lib"
     ],
     "scripts": {
+        "build": "tsc",
         "test": "nyc ava"
     },
     "ava": {
