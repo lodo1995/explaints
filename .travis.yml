@@ -9,6 +9,13 @@ before_script:
 after_success:
     - npx codecov
 
+deploy:
+    provider: npm
+    email: lodovico@giaretart.net
+    api_key: NPM_TOKEN
+    on:
+        tags: true
+
 cache:
     directories:
         - node_modules
