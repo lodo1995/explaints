@@ -1,6 +1,8 @@
 {
     "compileOnSave": true,
     "compilerOptions": {
+        "declaration": true,
+        "declarationDir": "dist",
         "forceConsistentCasingInFileNames": true,
         "module": "commonJS",
         "moduleResolution": "node",

@@ -12,7 +12,9 @@ rules:
     newline-per-chained-call: false
     no-implicit-dependencies: false
     no-magic-numbers: false
+    no-object-literal-type-assertion: false
     no-parameter-properties: false
+    object-literal-sort-keys: false
     one-line: false
     only-arrow-functions: false
     typedef: false

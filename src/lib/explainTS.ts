@@ -74,9 +74,9 @@ export interface CompoundEntry<T, R>
 // tslint:disable-next-line:no-any
 export class ComputedValue<T, R> extends Computed<T, R, any>
 {
-    public constructor(reason: R, private readonly val: T)
+    public constructor(reason: R, private readonly val: T, method = "simple")
     {
-        super("simple", reason);
+        super(method, reason);
     }
     public value()
     {
@@ -121,7 +121,7 @@ export function makeComputed<R, S, XR>(reason: R, preset: "max" | "min" | "avg" 
                                        def?: number | (() => number), method?: string,
                                        sources?: Array<Computed<number, XR, S>>):
                                        ComputedCompound<number, R, S, number, XR>;
-export function makeComputed<T, R>(reason: R, value: T): ComputedValue<T, R>;
+export function makeComputed<T, R>(reason: R, value: T, method?: string): ComputedValue<T, R>;
 export function makeComputed<T, R, S, XT, XR>(
             reason: R,
             valueFuncPreset: T
@@ -225,12 +225,12 @@ export function makeComputed<T, R, S, XT, XR>(
             const def = (methodDef as number | (() => number)) || 0;
             return new ComputedCompound(reason,
                                         (source, _) => source.length
-                                                    ? source.reduce((tot, entry) => tot + entry.value, 1)
+                                                    ? source.reduce((tot, entry) => tot + entry.value, 0)
                                                     : functionOrValue(def),
                                         methodSources as string || "sum",
                                         sources as Array<Computed<number, XR, S>>);
         }
         default:
-            return new ComputedValue(reason, valueFuncPreset as T);
+            return new ComputedValue(reason, valueFuncPreset as T, methodDef as string);
     }
 }

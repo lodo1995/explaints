@@ -1,6 +1,6 @@
 {
     "name": "explaints",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Self-explaining computed values",
     "author": "Lodovico Giaretta",
     "repository": {
@@ -9,8 +9,10 @@
     },
     "license": "MIT",
     "main": "dist/lib/explainTS.js",
+    "types": "dist/lib/explainTS.d.ts",
     "files": [
-        "dist/lib"
+        "dist/lib/explainTS.js",
+        "dist/lib/explainTS.d.ts"
     ],
     "scripts": {
         "build": "tsc",
