@@ -3,6 +3,10 @@
     "version": "0.0.1",
     "description": "",
     "author": "Lodovico Giaretta",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/lodo1995/explaints"
+    },
     "license": "MIT",
     "main": "dist/lib/explainTS.js",
     "files": [
