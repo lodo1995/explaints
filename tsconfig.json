@@ -1,0 +1,20 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "forceConsistentCasingInFileNames": true,
+        "module": "commonJS",
+        "moduleResolution": "node",
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitReturns": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "outDir": "dist",
+        "pretty": true,
+        "removeComments": true,
+        "rootDir": "src",
+        "sourceMap": true,
+        "strict": true,
+        "target": "es2017",
+        "watch": true
+    }
+}

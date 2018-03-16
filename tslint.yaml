@@ -1,0 +1,18 @@
+extends: tslint:all
+rules:
+    arrow-parens: false
+    cyclomatic-complexity: false
+    curly:
+        - true
+        - as-needed
+    interface-name: false
+    max-classes-per-file: false
+    member-ordering: false
+    newline-before-return: false
+    newline-per-chained-call: false
+    no-implicit-dependencies: false
+    no-magic-numbers: false
+    no-parameter-properties: false
+    one-line: false
+    only-arrow-functions: false
+    typedef: false
