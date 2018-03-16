@@ -1,7 +1,7 @@
 {
     "name": "explaints",
-    "version": "0.0.1",
-    "description": "",
+    "version": "0.1.0",
+    "description": "Self-explaining computed values",
     "author": "Lodovico Giaretta",
     "repository": {
         "type": "git",
@@ -21,8 +21,6 @@
         "source": "dist/lib/*.js"
     },
     "nyc": {
-        "check-coverage": true,
-        "per-file": true,
         "include": [
             "dist/lib/*.js"
         ],
