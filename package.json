@@ -3,29 +3,33 @@
     "version": "0.0.1",
     "description": "",
     "author": "Lodovico Giaretta",
-    "license": "UNLICENSED",
-
+    "license": "MIT",
     "main": "dist/lib/explainTS.js",
-    "files": [ "dist/lib" ],
-
+    "files": [
+        "dist/lib"
+    ],
     "scripts": {
         "test": "nyc ava"
     },
-    "ava":
-    {
+    "ava": {
         "files": "dist/test/*.js",
         "source": "dist/lib/*.js"
     },
-    "nyc":
-    {
+    "nyc": {
         "check-coverage": true,
         "per-file": true,
-        "include": [ "dist/lib/*.js" ],
-        "reporter": [ "lcovonly", "text" ],
+        "include": [
+            "dist/lib/*.js"
+        ],
+        "reporter": [
+            "lcovonly",
+            "text"
+        ],
         "report-dir": "./coverage"
     },
     "devDependencies": {
         "ava": "^0.25.0",
+        "codecov": "^3.0.0",
         "nyc": "^11.6.0",
         "tslint": "^5.9.1",
         "typescript": "^2.7.2"
