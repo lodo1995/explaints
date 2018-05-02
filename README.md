@@ -4,6 +4,8 @@
 
 # ExplainTS: <small> self-explaining computed values </small>
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/lodo1995/explaints.svg)](https://greenkeeper.io/)
+
 ## Motivation
 
 Imagine the salary of your employees starts at 2000$ and every year it grows by 5% of this original amount.
